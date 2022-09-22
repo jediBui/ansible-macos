@@ -1,0 +1,42 @@
+---
+dotfiles_repo: https://github.com/jediBui/dotfiles.git
+dotfiles_repo_local_destination: ~/Repo/dotfiles
+dotfiles_files:
+  - .hyper.js
+  - .osx
+  - .vimrc
+  - .zshrc
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - git
+  - iperf
+  - nmap
+  - openssl
+  - pygments
+  - spaceship # ohmyzsh theme
+  - ssh-copy-id
+  - wget
+  - wrk-trello
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - alfred
+  - authy
+  - discord
+  - docker
+  - fig
+  - google-chrome
+  - hyper
+  - iina
+  - royal-tsx
+  - slack
+  - thinkorswim
+  - visual-studio-code
+  - WhatsApp
+

@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  user: vu
+  connection: local
+
+  vars_files:
+    - default.config.yml
+
+  roles:
+    - geerlingguy.mac.homebrew
+    - geerlingguy.dotfiles
+
+  tasks: []
