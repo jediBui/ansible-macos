@@ -57,6 +57,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - epk/epk
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -66,6 +67,7 @@ homebrew_cask_apps:
   - discord
   - docker
   - fig
+  - font-sf-mono-nerd-font
   - google-chrome
   - hyper
   - iina
