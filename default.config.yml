@@ -32,7 +32,7 @@ dockitems_persist:
     pos: 8
   - name: "Docker" 
     path: "/Applications/Docker.app/"
-    pos: 8
+    pos: 9
 
 dotfiles_repo: https://github.com/jediBui/dotfiles.git
 dotfiles_repo_local_destination: ~/Repo/dotfiles

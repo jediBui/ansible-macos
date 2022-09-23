@@ -10,5 +10,18 @@
     - geerlingguy.mac.homebrew
     - geerlingguy.mac.dock
     - geerlingguy.dotfiles
-    
-  tasks: []
+
+  tasks:
+  - name: Download SF Mono Powerline Font
+    ansible.builtin.get_url:
+    #  url: https://github.com/Twixes/SF-Mono-Powerline/blob/master/SF-Mono-Powerline-Regular.otf
+      url: https://github.com/Twixes/SF-Mono-Powerline/archive/refs/heads/master.zip
+      dest: /tmp
+  - name: Extract SF Mono fonts
+    ansible.builtin.unarchive:
+      src: /tmp/master.zip
+      dest: /Library/Fonts
+  - name: Copy SF Font to Fonts folder
+    ansible.builtin.copy:
+      src: /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. 
+      dest: /Library/Fonts
