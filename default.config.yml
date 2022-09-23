@@ -6,8 +6,15 @@ configure_dotfiles: true
 configure_dock: true
 dockitems_remove:
  - Launchpad
+ - Mail
+ - Maps
+ - Photos
+ - Facetime
+ - Contacts
  - TV
  - Podcasts
+ - Music
+ - News
  - 'App Store'
 
 dockitems_persist: 
