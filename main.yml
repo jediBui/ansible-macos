@@ -23,8 +23,12 @@
       dest: /Library/Fonts/
   - name: Copy SF Font Mono Powerline Font to Fonts folder
     ansible.builtin.copy:
-      src: /Library/Fonts/SF-Mono-Powerline-master
-      dest: /Library/Fonts
+      src: /Library/Fonts/SF-Mono-Powerline-master/
+      dest: /Library/Fonts/
+  - name: Delete SF Mono folder
+    ansible.builtin.file:
+      path: /Library/Fonts/SF-Mono-Powerline-master
+      state: absent
   # - name: Copy SF Font to Fonts folder
     # ansible.builtin.copy:
     #   src: /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. 
