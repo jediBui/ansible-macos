@@ -1,7 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: false
+#configure_dotfiles: false
 
 configure_dock: true
 dockitems_remove:
@@ -34,13 +34,13 @@ dockitems_persist:
     path: "/Applications/Docker.app/"
     pos: 9
 
-dotfiles_repo: https://github.com/jediBui/dotfiles.git
-dotfiles_repo_local_destination: ~/Repo/dotfiles
-dotfiles_files:
-  - .hyper.js
-  - .osx
-  - .vimrc
-  - .zshrc
+# dotfiles_repo: https://github.com/jediBui/dotfiles.git
+# dotfiles_repo_local_destination: ~/Repo/dotfiles
+# dotfiles_files:
+#   - .hyper.js
+#   - .osx
+#   - .vimrc
+#   - .zshrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
