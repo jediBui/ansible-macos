@@ -1,4 +1,32 @@
 ---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+
+configure_dock: true
+dockitems_remove:
+ - Launchpad
+ - TV
+ - Podcasts
+ - 'App Store'
+
+dockitems_persist: 
+  - name: "1password"
+    path: "/Applications/1password.app/"
+    pos: 5
+  - name: "Discord"
+    path: "/Applications/Discord.app/"
+    pos: 6
+  - name: "Hyper"
+    path: "/Applications/Hyper.app/"
+    pos: 7
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 8
+  - name: "Docker" 
+    path: "/Applications/Docker.app/"
+    pos: 8
+
 dotfiles_repo: https://github.com/jediBui/dotfiles.git
 dotfiles_repo_local_destination: ~/Repo/dotfiles
 dotfiles_files:
@@ -36,7 +64,7 @@ homebrew_cask_apps:
   - iina
   - royal-tsx
   - slack
-  - thinkorswim
+#  - thinkorswim
   - visual-studio-code
   - WhatsApp
 
