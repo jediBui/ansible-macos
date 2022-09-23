@@ -19,9 +19,13 @@
       dest: /tmp
   - name: Extract SF Mono fonts
     ansible.builtin.unarchive:
-      src: /tmp/master.zip
-      dest: /Library/Fonts
-  - name: Copy SF Font to Fonts folder
+      src: /tmp/SF-Mono-Powerline-master.zip
+      dest: /Library/Fonts/
+  - name: Copy SF Font Mono Powerline Font to Fonts folder
     ansible.builtin.copy:
-      src: /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. 
+      src: /Library/Fonts/SF-Mono-Powerline-master
       dest: /Library/Fonts
+  # - name: Copy SF Font to Fonts folder
+    # ansible.builtin.copy:
+    #   src: /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. 
+    #   dest: /Library/Fonts
