@@ -29,6 +29,38 @@
     ansible.builtin.file:
       path: /Library/Fonts/SF-Mono-Powerline-master
       state: absent
+
+  - name: Install Oh My ZSH
+    shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    args:
+      creates: "/Users/{{ lookup('env', 'USER') }}/.oh-my-zsh"
+
+  - name: Set ZSH as the default shell
+    shell: chsh -s $(which zsh) {{ lookup('env', 'USER') }}
+    become: true
+
+  - name: "Create a default ZSH configuration"
+    template:
+      src: files/.zshrc.j2
+      dest: /Users/{{ lookup('env', 'USER') }}/.zshrc
+      owner: "{{ lookup('env', 'USER') }}"
+      force: yes
+
+  - name: "Create a default Hyper Shell configuration"
+    template:
+      src: files/.hyper.js.j2
+      dest: /Users/{{ lookup('env', 'USER') }}/.hyper.js
+      owner: "{{ lookup('env', 'USER') }}"
+      force: yes
+
+
+
+
+
+
+
+
+
   # - name: Copy SF Font to Fonts folder
     # ansible.builtin.copy:
     #   src: /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. 
