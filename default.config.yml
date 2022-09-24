@@ -18,16 +18,19 @@ dockitems_remove:
  - 'App Store'
 
 dockitems_persist: 
-  - name: "1password"
-    path: "/Applications/1password.app/"
+  - name: "WhatsApp"
+    path: "/Applications/WhatsApp.app/"
+    pos: 4
+  - name: "Hyper"
+    path: "/Applications/Hyper.app/"
     pos: 5
   - name: "Discord"
     path: "/Applications/Discord.app/"
     pos: 6
-  - name: "Hyper"
-    path: "/Applications/Hyper.app/"
+  - name: "1password"
+    path: "/Applications/1password.app/"
     pos: 7
-  - name: "Visual Studio Code"
+    - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
     pos: 8
   - name: "Docker" 
