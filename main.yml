@@ -39,6 +39,10 @@
     shell: chsh -s $(which zsh) {{ lookup('env', 'USER') }}
     become: true
 
+  - name: Set Spaceship theme in oh-myzsh
+    shell: echo "source $(brew --prefix)/opt/spaceship/spaceship.zsh" >>! ~/.zshrc
+    become: true
+
   - name: "Create a default ZSH configuration"
     template:
       src: files/.zshrc.j2
