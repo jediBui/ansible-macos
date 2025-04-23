@@ -48,14 +48,15 @@ dockitems_persist:
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - git
-  - iperf
-  - nmap
-  - openssl
-  - pygments
-  - spaceship # ohmyzsh theme
+  #- iperf
+  #- nmap
+  #- openssl
+  #- pygments
+  #- spaceship # ohmyzsh theme
+  - starship # ohmyzsh theme
   - ssh-copy-id
   - wget
-  - wrk-trello
+  #- wrk-trello
 
 homebrew_taps:
   - homebrew/core
@@ -67,15 +68,13 @@ homebrew_cask_apps:
   - 1password
   - alfred
   - authy
+  - chatgpt
   - discord
-  - docker
-  - fig
   - font-sf-mono-nerd-font
   - google-chrome
   - hyper
   - iina
   - royal-tsx
-  - slack
 #  - thinkorswim
   - visual-studio-code
   - WhatsApp
